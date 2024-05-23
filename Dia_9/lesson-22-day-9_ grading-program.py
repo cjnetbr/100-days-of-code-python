@@ -36,7 +36,6 @@ Ao final do seu programa, a instrução print mostrará o dicionário student_sc
 não altere isso.
 
 '''
-
 student_scores = {
   "Harry": 81,
   "Ron": 78,
@@ -49,3 +48,14 @@ student_scores = {
 student_grades = {}
 
 # STEP-2: Write your code below to add the grades to student_grades.
+for k in student_scores:
+  if student_scores[k] > 90:
+    student_grades[k] = "Outstanding"
+  elif student_scores[k] > 80:
+    student_grades[k] = "Exceeds Expectations"
+  elif student_scores[k] > 70:
+    student_grades[k] = "Acceptable"
+  elif student_scores[k] <= 70:
+    student_grades[k] = "Fail"
+  
+print(student_grades)
