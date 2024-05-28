@@ -30,8 +30,7 @@ def calculate_score(list):
     if score == blackjack:
         score = 0
         return score
-    else:
-        return score            
+    return score            
 
     
 '''Distribua 2 cartas ao usuário e ao computador'''
@@ -56,12 +55,12 @@ print(f"Computer's first card: {computer_card[0]}")
 if user_score == 0:
     u_final_hand = user_card
     print(f"Your final hand: {u_final_hand}, final score : {user_score}")
-    print(f"Computer's final hand: {c_final_hand}, final score : {computer_score}")
+    print(f"Computer's final hand: {computer_card}, final score : {computer_score}")
     print("Win with a Blackjack")
 elif computer_score == 0:
     c_final_hand = computer_card
     print(f"Computer's final hand: {c_final_hand}, final score : {computer_score}")
-    print(f"Your final hand: {u_final_hand}, final score : {user_score}")
+    print(f"Your final hand: {user_card}, final score : {user_score}")
     print("Computer's win with a Blackjack")
     
 
